@@ -1,0 +1,125 @@
+<html>
+
+<head>
+  <title>Punto de Venta</title>
+  <meta charset="utf-8">
+  <!-- Para carácteres en español-->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: gray;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #071732;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>¡Agregalo a tu carrito!</h1>
+
+    <form id="form-venta">
+      <label for="producto" style="color: #071732; font-size: 20px ">Producto:</label>
+      <select id="producto">
+        <option value="Anemómetro de copas">Anemómetro de copas</option>
+        <option value="Anemómetro de hélice">Anemómetro de hélice</option>
+        <option value="Anemómetro ultrasónico">Anemómetro ultrasónico</option>
+        <option value="Anemómetro de hilo caliente">Anemómetro de hilo caliente</option>
+        <option value="Anemómetro de presión diferencial">Anemómetro de presión diferencial</option>
+        <option value="Anemómetro sónico">Anemómetro sónico</option>
+        <option value="Anemómetro de lámina caliente">Anemómetro de lámina caliente</option>
+        <option value="Anemómetro de pitot estático">Anemómetro de pitot estático</option>
+        <option value="Anemómetro de vórtice">Anemómetro de vórtice</option>
+        <option value="Anemómetro de radiofrecuencia">Anemómetro de radiofrecuencia</option>
+        <!-- Agrega más opciones de productos aquí -->
+      </select>
+
+      <label for="cantidad" style="color: #071732; font-size: 20px ">Cantidad:</label>
+      <input type="text" id="cantidad">
+      <br><br>
+      <input type="submit" value="Agregar al carrito">
+    </form>
+
+    <table id="carrito">
+      <tr>
+        <th>Producto</th>
+        <th>Cantidad</th>
+      </tr>
+      <!-- Aquí se mostrarán los productos agregados al carrito -->
+    </table>
+  </div>
+
+  <script>
+    document.getElementById("form-venta").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      var producto = document.getElementById("producto").value;
+      var cantidad = document.getElementById("cantidad").value;
+
+      if (producto && cantidad) {
+        var newRow = document.createElement("tr");
+        newRow.innerHTML = "<td>" + producto + "</td><td>" + cantidad + "</td>";
+        document.getElementById("carrito").appendChild(newRow);
+
+        document.getElementById("producto").value = "";
+        document.getElementById("cantidad").value = "";
+      }
+    });
+  </script>
+</body>
+
+</html>

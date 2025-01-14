@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="español--">
+
+<head>
+    <title>Inventario</title>
+    <!--Estilos de manera incrustada-->
+    <meta charset="utf-8">
+    <!-- Para carácteres en español-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <header class="content_h">
+        <ul id="menu">
+            <li><a href="index.html">Principal</a></li>
+            <li id="selec"><a href="practica3.html">Inventario</a></li>
+            <li><a href="promo.html">Promoción</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            
+            <li><a href="form.html" id="sesion">Iniciar sesión</a></li>
+            <!--menu de cada página -->
+        </ul>
+        <br><br><br><br><br>
+        
+        <img src="img/cielocefiro.jpeg" alt="logo" width="100%">
+    </header>
+
+    <center>
+        <table id="t1_1" style="width:90%">
+            <caption style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; color: #071732;">Anemometros en
+                oferta!</caption>
+            <!--como un titulo de la tabla--><br>
+            <tr>
+                <th>Productos</th>
+                <th>Precio Unitario</th>
+                <th>Existencia</th>
+            </tr>
+            <tr>
+                <td>Anemómetro de copas</td>
+                <td>$550</td>
+                <td>4 unidades</td>
+            </tr>
+            <tr>
+                <td>Anemómetro de hélice</td>
+                <td>$483</td>
+                <td>3 Unidades</td>
+            </tr>
+            <tr>
+                <td>Anemómetro ultrasónico</td>
+                <td>$3881</td>
+                <td>10 Unidades</td>
+            </tr>
+            <tr>
+                <td>Anemómetro de hilo caliente</td>
+                <td>$2458</td>
+                <td>15 Unidades</td>
+            </tr>
+            <tr>
+                <td>Anemómetro de presión diferencial</td>
+                <td>$4789</td>
+                <td>12 Unidades</td>
+            </tr>
+            <tr>
+                <td>Anemómetro sónico</td>
+                <td>$4999</td>
+                <td>10 Unidades</td>
+            </tr>
+            <tr>
+                <td>Anemómetro de lámina caliente</td>
+                <td>$6642</td>
+                <td>14 Unidades</td>
+            </tr>
+            <tr>
+                <td>Anemómetro de pitot éstatico</td>
+                <td>$5890</td>
+                <td>20 Unidades</td>
+            </tr>
+            <tr>
+                <td>Anemómetro de vórtice</td>
+                <td>$9846</td>
+                <td>12 Unidades</td>
+            </tr>
+            <tr>
+                <td>Anemómetro de radiofrecuencia</td>
+                <td>$10095</td>
+                <td>17 Unidades</td>
+            </tr>
+        </table>
+        <!--tablita de precios con 10 registros-->
+        <br><br>
+        <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs; color: #264e49">¿Ves algo
+            que te gusta?</h2>
+        <p id="escrito">Selecciona el libro de tu interes y pulsa el boton</p>
+        <button type="button" onclick="myFunction()">¡Comprar!</button>
+        <script style="color: #074235">
+            function myFunction() {
+                //document.getElementById('demo3').innerHTML = "Agregado Al Carrito";
+                alert("Agregado al carrito");
+            }
+
+//ventana emergente cuando se pulse el boton
+        </script>
+        <br>
+        <center>
+            <iframe src="forma_pago.html" width="100%" height="500px"></iframe>
+            <br><br>
+        </center>
+        <footer>
+
+            <table id="foot">
+                <!--footer con una tabla de otros datos y los logos de 3 redes sociales-->
+                <tr>
+                    <th>Más información</th>
+                    <th>CÉFIRO</th>
+                    <th>Editores</th>
+                </tr>
+                <tr id="del_foot">
+                    <td>Contactanos</td>
+                    <td><a href="#">Publicar</a><br></td>
+                    <td>Paulina Michelle Rivera Castillo<br>Angel Sebastian Islas Lima<br>Israel Sánchez Velazco</td>
+                </tr>
+            </table>
+            <p>
+                <!--solo uno tiene enlace los demás son estáticos-->
+                <a href="https://www.facebook.com/groups/168988727386" target="_blank"><img src="img/fac.png"
+                        id="logo"></a>
+                <img src="img/ints.jpg" id="logo">
+                <a href="https://www.youtube.com/@paulinamichelleriveracasti9847"><img src="img/you.png" id="logo"></a>
+            </p>
+        </footer>
+    </center>
+</body>
+
+</html>

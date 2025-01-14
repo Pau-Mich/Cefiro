@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="español--">
+
+<head>
+    <title>Promoción</title>
+
+    <meta charset="utf-8">
+    <!-- Para carácteres en español-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+    <header class="content_h">
+
+        <ul id="menu">
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="practica3.html">Inventario</a></li>
+            <li id="selec"><a href="promo.html">Promoción</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            
+            <li><a href="form.html" id="sesion">Iniciar sesión</a></li>
+            <!--menu de cada página -->
+        </ul>
+        <br><br><br><br><br>
+       
+        <img src="img/nubecefiro.jpeg" alt="logo" width="100%">
+        <!--Agregue un banner en formato gif (se debe crear en específico para su página) con su slogan
+            en la página principal del punto de venta. (en el index)-->
+    </header>
+    
+    <center>
+        <br>
+        <section id="t1">
+            <table style="width:100%">
+                <table class="tabla">
+                    <tr>
+                        <th>
+                            <div style="text-align: center;">
+                                <br><br>
+                                <video id="video1" width="700" height="600" autoplay>
+                                    <source src="img/Anemometer..mp4" type="video/mp4">
+                                </video>
+                                <br>
+                                <button class="boton_1" onclick="playPause()">Play/Pause</button>
+                                
+
+                            </div>
+                            <script>
+                                var myVideo = document.getElementById("video1");
+                                function playPause() {
+                                    if (myVideo.paused)
+                                        myVideo.play();
+                                    else
+                                        myVideo.pause();
+                                }
+                               
+
+                            </script>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th id="pajarito">
+                            <embed src="img/iconCefiro.png" type="image/png" width="370"><br>
+                            <p>Escucha sobre ellos..</p>
+                            <audio controls>
+                                <source src="img/Prom1.ogg"type="audio/mpeg">
+                                    
+                               
+                            </audio>
+                            
+                        </th>
+                    </tr>
+                </table>
+        </section>
+        <br>
+        <aside>
+            <div style="text-align: cen;">
+                <!--Codigo indertado desde youtube, con la opcion copiar código de insercion-->
+                <iframe width="600" height="441" src="https://www.youtube.com/embed/w0DCL1diXfA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+        </aside>
+        <section id="content-me">
+            <article>
+                <table>
+                    <caption class="titl ">Más opciones para tí</caption>
+                    <tr>
+                        <th class="tittle">Anemómetros portátiles</th>
+                        <th class="tittle">Anemómetros digitales</th>
+                        <th class="tittle">Accesorios</th>
+                    </tr>
+                    <tr>
+                        <td class="texto">Kestrel 5500 Weather Meter</td>
+                        <td class="texto">Proster Anemómetro Digita</td>
+                        <td class="texto">Trípode de montaje</td>
+                    </tr>
+                    <tr>
+                        <td class="texto">Davis Instruments Vantage Vue</td>
+                        <td class="texto">HoldPeak Anemómetro Digital HP-866B</td>
+                        <td class="texto">Estuche de protección</td>
+                    </tr>
+                    <tr>
+                        <td class="texto">Ambient Weather WM-4 Handheld Weather Meter</td>
+                        <td class="texto">Extech Anemómetro Digital HD350</td>
+                        <td class="texto">Cable de conexión a la computadora</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <hr>
+
+        <iframe src="email.html" width="100%" height="680px"></iframe>
+        
+        <!--ultimo punto de la practica insertar la nueva pagina de email para formularios-->
+        <footer>
+            <table id="foot">
+                <!--footer con una tabla de otros datos y los logos de 3 redes sociales-->
+                <tr>
+                    <th>Más información</th>
+                    <th>CÉFIRO</th>
+                    <th>Editores</th>
+                </tr>
+                <tr id="del_foot">
+                    <td>Contactanos</td>
+                    <td><a href="#">Publicar</a><br></td>
+                    <td>Paulina Michelle Rivera Castillo<br>Angel Sebastian Islas Lima<br>Israel Sánchez Velazco</td>
+                </tr>
+            </table>
+            <p>
+                <!--solo uno tiene enlace los demás son estáticos-->
+                <a href="https://www.facebook.com/groups/168988727386" target="_blank"><img src="img/fac.png"
+                        id="logo"></a>
+                <img src="img/ints.jpg" id="logo">
+                <a href="https://www.youtube.com/@paulinamichelleriveracasti9847"><img src="img/you.png" id="logo"></a>
+            </p>
+        </footer>
+</body>
+
+</html>
+</body>
+
+</html>

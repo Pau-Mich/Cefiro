@@ -1,0 +1,64 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear cuenta</title>
+  <link rel="stylesheet" href="css/hoja_form.css">
+  <!--enlazada a una hoja de estilos-->
+</head>
+
+<body>
+  <header class="content_h">
+    <center>
+    <ul id="menu">
+        <li ><a href="index.html">Principal</a></li>
+        <li ><a href="practica3.html">Inventario</a></li>
+        <li><a href="promo.html">Promoción</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        
+        <li id="selec"><a href="form.html" id="sesion">Iniciar sesion</a></li>
+        <!--menu de cada página -->
+    </ul>
+<br><br><br><br><br>
+<img src="img/iconCefiro.png" alt="logo" width="200px">
+</center>
+        </header>
+
+  <form action="index.html" method="post">
+    <!--POST consiste en datos "ocultos" enviados por un formulario cuyo método de envío es post.Los datos no son visibles.-->
+
+    <h1>Nueva Cuenta</h1>
+
+    <fieldset>
+      <!--El elemento fieldset (grupo de campos) permite organizar en grupos los campos de un formulario.-->
+      <legend><span class="number">1</span>Información Básica </legend>
+      <label for="name">Nombre de Usuario<span> *</span></label>
+      <input type="text" id="name" name="user_name" required>
+
+      <label for="mail">Email<span> *</span></label>
+      <input type="email" id="mail" name="user_email" required>
+
+      <label for="password">Contraseña <span> *</span></label>
+      <input type="password" id="password" name="user_password" required>
+      <!--required para los campos que serán necesarios además del asterisco con span-->
+
+      <label>Edad <span> *</span></label>
+      <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Menor de
+        18</label><br>
+      <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light" required>18 o
+        mayor</label>
+    </fieldset>
+    <!--manda al siguiente formulario-->
+      <button type="submit"><a href="preferencias.html">Prefrencias  -></a></button>
+    <center>
+      <!--Zona para comentarios con el textarea-->
+      Dejanos un comentario:
+      <textarea>
+
+    </textarea>
+    </center>
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Compra</title>
+  <link rel="stylesheet" href="css/hoja_form.css">
+</head>
+<body>
+  <header class="content_h">
+    <center>
+      <ul id="menu">
+        <li ><a href="index.html">Principal</a></li>
+        <li ><a href="practica3.html">Inventario</a></li>
+        <li><a href="promo.html">Promoción</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        
+        <li id="selec"><a href="form.html" id="sesion">Iniciar sesion</a></li>
+        <!--menu de cada página -->
+    </ul>
+<br><br><br><br><br>
+       
+<img src="img/iconCefiro.png" alt="logo" width="200px">
+</center>
+        </header>
+
+  <div class="container">
+   
+    <!--Ejemplo tomato de un video de youtube para las listas de opciones-->
+    <form id="form-preferencias">
+        <h1>Preferencias de Compra</h1>
+      <label for="producto">Anemometros <span>*</span></label>
+      <select id="producto" required>
+        <!--obligatorio-->
+        <option value="Anemómetro de copas">Anemómetro de copas</option>
+        <option value="Anemómetro de hélice">Anemómetro de hélice</option>
+        <option value="Anemómetro ultrasónico">Anemómetro ultrasónico</option>
+        <option value="Anemómetro de hilo caliente">Anemómetro de hilo caliente</option>
+        <option value="Anemómetro de presión diferencial">Anemómetro de presión diferencial</option>
+        <option value="Anemómetro sónico">Anemómetro sónico</option>
+        <option value="Anemómetro de lámina caliente">Anemómetro de lámina caliente</option>
+        <option value="Anemómetro de pitot estático">Anemómetro de pitot estático</option>
+        <option value="Anemómetro de vórtice">Anemómetro de vórtice</option>
+        <option value="Anemómetro de radiofrecuencia">Anemómetro de radiofrecuencia</option>
+    <!--Se terminan las opciones y se pasa al siguiente campo-->
+      </select>
+      <br><br>
+      <label for="fecha-entrega">Fecha de Entrega <span>*</span></label>
+      <input type="date" id="fecha-entrega" required>
+      <!--obligatorio-->
+      <br><br>
+      <label for="tiempo-entrega">Hora de Entrega <span>*</span></label>
+      <input type="time" id="tiempo-entrega" required>
+      <!--obligatorio-->
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" id="cantidad" min="1" max="10" step="1" required>
+      <center>
+      <input type="submit" value="Realizar Compra"><br><br>
+  Dejanos un comentario:<br>
+  <!--textarea para comentarios-->
+  <textarea></textarea><br><br>
+</center>
+    </form>
+  </div>
+  <script>
+    //código obtenido de un ejemplo de internet para la función de "enviar" los datos del formulario
+    document.getElementById("form-preferencias").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      //declaración de variables
+      var producto = document.getElementById("producto").value;
+      var fechaEntrega = document.getElementById("fecha-entrega").value;
+      var tiempoEntrega = document.getElementById("tiempo-entrega").value;
+      var cantidad = document.getElementById("cantidad").value;
+      
+      if (producto && fechaEntrega && tiempoEntrega && cantidad) {
+        // Aquí puedes realizar las acciones correspondientes, como enviar la solicitud de compra al servidor, etc.
+        console.log("Producto: " + producto);
+        console.log("Fecha de Entrega: " + fechaEntrega);
+        console.log("Hora de Entrega: " + tiempoEntrega);
+        console.log("Cantidad: " + cantidad);
+        
+        // Limpia los campos después de enviar el formulario
+        document.getElementById("producto").value = "";
+        document.getElementById("fecha-entrega").value = "";
+        document.getElementById("tiempo-entrega").value = "";
+        document.getElementById("cantidad").value = "";
+      }
+    });
+  </script>
+  <center>
+    <!--boton que regresa a la pagina del inventario-->
+<a href="index.html"> <input type="submit" value="Volver"></a>
+</center>
+
+</body>
+</html>

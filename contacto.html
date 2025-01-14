@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="español--">
+
+<head>
+    <title>Contactanos</title>
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="css/hojas_dos.css">
+    <!-- Hoja de estilos -->
+    <meta name="keywords" content="Paulina,Rivera,Universidad Autonoma,Computación,HTML, CSS, XML, XHTML, JavaScript">
+    <!--keywords palabras clave, del navegador -->
+    <meta name="description" content="Pagina Personal UATx">
+    <!-- Dar el contenido, categorias, para clasificarla-->
+    <meta name="Paulina R." content="Paulina Michelle Rivera Castillo"> <!--Cuando se usan con servidores -->
+    <!--<meta http-equiv="refresh" content="30"> 
+	s Actualizacion -->
+    <meta name="viewport" content="width=device‐width, initial‐scale=1.0">
+    <!--Configuración de la ventana para que su página web se vea bien en todos los
+dispositivos -->
+    <meta charset="utf-8">
+    <!-- Para carácteres en español-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header class="content-header">
+        <ul>
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="practica3.html">Inventario</a></li>
+            <li><a href="promo.html">Promoción</a></li>
+            <li id="selec"><a href="#">Contacto</a></li>
+            <li><a href="form.html">Iniciar sesión</a></li>
+            <!--menu de cada página -->
+        </ul>
+
+        <br><br>
+        <p id="texto_mio">La empresa CÉFIRO está especializada en la fabricación y venta de dispositivos de medición
+            de velocidad y dirección del viento.<br> </span>
+            <img src="img/iconCefiro.png" alt="logo" width="200px" class="imagen" aling="left"><br>
+
+            <br><br>
+        </p>
+        <br><br>
+    </header>
+    <!--Header----------------------------------------------------------->
+    </div>
+    <section class="content-currum">
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="mandar">
+                    <img src="img/docs.png" alt="doc" width="30px" class="icono">
+                    <h3>Sobre nosotros</h3>
+                    <p> Experiencia <br>laboral, y académica</p>
+                </a>
+            </div>
+
+            <div class="box">
+                <a href="#" class="mandar">
+                    <img src="img/computadora.png" alt="compu" width="30px" class="icono">
+                    <h3>Habilidades tecnicas </h3>
+                    <p> Lenguajes de Programación y Areas de Computación </p>
+                    <br>
+                </a>
+            </div>
+
+            
+            <!--se mantienen los botones pero ya no tienen funcionalidad,
+            solo resaltan con el hover-->
+        </div>
+        <hr><br>
+    </section>
+    <hr>
+
+    <!-----Menu de navegacion dentro de la página-------------->
+    <section class="content-me">
+        <article class="contain">
+            <!--primer iframe del section de los puntos 6 7 y 8 de la primera tarea-->
+            <iframe src="habilidades.html" width="100%" height="780" id="habi" name="iframe_a"></iframe>
+    </section>
+    </article>
+    </section>
+    <!--segundo section con article
+    
+     -->
+    <aside>
+        <h2>MENÚ</h2>
+        <!--con un aside hice un menu que manipula los iframe del lado
+        izquierdo con el atributo target y name desde el iframe.
+        poniendo la dirección del id con respecto a ese iframe, -->
+        <br><br>
+        <div id="menu">
+            <ul>
+                <li class="has-sub"><a href="habilidades.html#habi" target="iframe_a">Habilidades Técnicas</a>
+                <li class="has-sub"><a href="habilidades.html#curri" target="iframe_a">Acerca de nosotros</a>
+            </ul>
+        </div>
+        <br>
+        <h2>Conecta con nosotros</h2><br>
+        <!--por cuestiones de diseño, pusé el formulario en el aside y no en el footer-->
+        <script>
+            function mostrarAlerta() {
+                alert('¡Formulario enviado!');
+            }
+        </script>
+        <form onsubmit="mostrarAlerta()">
+            <br><br>
+            <p class="nombre">Nombre:<br>
+                <input type="text" name="name">
+            </p>
+            <p class="nombre">E-mail: <br>
+                <input type="text" name="mail">
+            </p>
+            <p class="nombre">Comentario: <br>
+
+                <input type="text" name="comment" size="50">
+                <center>
+                    <p><button type="submit" class="fech">Enviar</button>
+                        <button type="reset" class="fech">Borrar</button>
+                    </p><br>
+                </center>
+                <!--formulario para enviar un correo-->
+
+        </form>
+        
+<section>
+    <article>
+        <button id="fechaBtn">Mostrar Fecha de Consulta</button>
+        <button id="estiloBtn">Cambiar Hoja de Estilo</button>
+        <br><br>
+        <script>
+            // Obtener el botón y agregar un evento de clic para mostrar la fecha
+            var fechaBtn = document.getElementById("fechaBtn");
+            fechaBtn.addEventListener("click", mostrarFecha);
+
+            // Función para mostrar la fecha actual
+            function mostrarFecha() {
+                var fecha = new Date();
+                alert("Fecha de consulta: " + fecha);
+            }
+
+            // Obtener el botón y agregar un evento de clic para cambiar la hoja de estilo
+            var estiloBtn = document.getElementById("estiloBtn");
+            estiloBtn.addEventListener("click", cambiarEstilo);
+
+            // Función para cambiar la hoja de estilo
+            function cambiarEstilo() {
+                var stylesheet = document.getElementById("stylesheet");
+                if (stylesheet.href.endsWith("css/style.css")) {
+                    stylesheet.href = "css/hojas_dos.css";
+                } else {
+                    stylesheet.href = "css/style.css";
+                }
+            }
+        </script>
+    </article>
+</section>
+        </section>
+    </aside>
+    <center>
+        <footer>
+            <table id="foot">
+                <!--footer con una tabla de otros datos y los logos de 3 redes sociales-->
+                <tr>
+                    <th>Más información</th>
+                    <th>CÉFIRO</th>
+                    <th>Editores</th>
+                </tr>
+                <tr id="del_foot">
+                    <td>Contactanos</td>
+                    <td><a href="#">Publicar</a><br></td>
+                    <td>Paulina Michelle Rivera Castillo<br>Angel Sebastian Islas Lima<br>Israel Sánchez Velazco</td>
+                </tr>
+            </table>
+            <p>
+                <!--solo uno tiene enlace los demás son estáticos-->
+                <a href="https://www.facebook.com/groups/168988727386" target="_blank"><img src="img/fac.png"
+                        id="logo"></a>
+                <img src="img/ints.jpg" id="logo">
+                <a href="https://www.youtube.com/@paulinamichelleriveracasti9847"><img src="img/you.png" id="logo"></a>
+            </p>
+        </footer>
+    </center>
+
+</body>
+
+</html>
